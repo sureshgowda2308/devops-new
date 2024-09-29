@@ -1,0 +1,197 @@
+def colour():
+    d1 = ['red', 'white', 'black']
+    if q4==d1[0]:
+        print(f"\nyou have selected {d1[0]} colour.\n")
+    elif q4==d1[1]:
+        print(f"\nyou have selected {d1[1]} colour.\n")
+    elif q4==d1[2]:
+        print(f"\nyou have selected {d1[2]} colour.\n")     
+
+
+def model():
+    an1 = ['128GB', '256GB', '512GB']
+    if qn == an1[0]:
+        print(f"\nyou have selected {an1[0]} variant.\n")
+    elif qn == an1[1]:
+        print(f"\nyou have selected {an1[1]} variant.\n")
+    elif qn == an1[2]:
+        print(f"\nyou have selected {an1[2]} variant.\n")
+
+
+
+
+def iphone():
+    print("\n\nBelow are your phone's specificatons:\n=====================================\n")
+    print('Brand     :',q2)
+    print('Model     :',q3)
+    print('Colour    :',q4)
+    print('Varient   :',qn)
+    print('RAM       : 6GB')
+    print('Battery   : 5000mAh')
+    print('Camera    : 50mp+10mp+2mp')
+    print('Processor : Bionic A15')
+    print('Display   : Full HD OLED')
+    print('Screen    : 6.12 inch')
+    print('Weight    : 171 grams')
+    print('Charger   : No charger in Box')
+    print('Price     : Rs75,999 only')
+
+
+
+def samsung():
+    print("\n\n\nBelow are your phone's specificatons:\n=====================================\n")
+    print('Brand     :',q2)
+    print('Model     :',q11)
+    print('Colour    :',q4)
+    print('Varient   :',qn)
+    print('RAM       : 12GB')
+    print('Battery   : 6000mAh')
+    print('Camera    : 80mp+12mp+2mp')
+    print('Processor : Exynos 2400')
+    print('Display   : Dynamic AMOLED')
+    print('Screen    : 6.2 inch')
+    print('Weight    : 168 grams')
+    print('Charger   : Charger comes in Box')
+    print('Price     : Rs49,999 only')
+
+
+
+print("     ======> WELLCOME TO SHOPING WITH PYTHON <======")
+
+
+x = [1,2,3]
+for item in x:
+    print("\n\nDo you want to buy a brand new phone?")
+    q1 = input('  a)yes b)no : ').lower()
+    a1 = ['yes', 'no']
+    if q1 == a1[0]:
+        print("\nWhich brand do you want?")
+        q2 = input('  a)iphone b)samsung : ').lower()
+        b1 = 'iphone'
+        b2 = 'samsung'
+        if q2 == b1:   #iphone
+            print(f"\nWhich model do you want in {b1}?")
+            q3 = input('  a)15 pro b)15 pro max c)15 plus : ').lower()
+            c1 = '15 pro'
+            c2 = '15 pro max'
+            c3 = '15 plus'
+            if q3==c1:
+                print("\nyou have selected",c1,'\n')   #15 pro
+                print("Which colour do you preffer?")
+                q4 = input('  a)red b)white c)black : ').lower()
+                if q4!='red' and q4!='white' and q4!='black':
+                    print("\n\nInvalid input. \nPlease retry again.\n")
+                else:
+                    colour()
+                    print("Which variant do you want?")
+                    qn = input('  a)128GB b)256GB c)512GB : ').upper()
+                    if qn!='128GB' and qn!='256GB' and qn!='512GB':
+                        print("\n\nInvalid input. \nPlease retry again.\n")
+                    else:
+                        model()
+                        iphone()
+                        break
+            elif q3==c2:
+                print("\nyou have selected",c2,'\n')   #15 pro max
+                print("Which colour do you preffer?")
+                q4 = input('  a)red b)white c)black : ').lower()
+                if q4!='red' and q4!='white' and q4!='black':
+                    print("\n\nInvalid input. \nPlease retry again.\n")
+                else:
+                    colour()
+                    print("Which variant do you want?")
+                    qn = input('  a)128GB b)256GB c)512GB : ').upper()
+                    if qn!='128GB' and qn!='256GB' and qn!='512GB':
+                        print("\n\nInvalid input. \nPlease retry again.\n")   
+                    else:
+                        model()
+                        iphone()
+                        break
+            elif q3==c3:
+                print("\nyou have selected",c3,'\n')   #15 plus
+                print("Which colour do you preffer?")
+                q4 = input('  a)red b)white c)black : ').lower()
+                if q4!='red' and q4!='white' and q4!='black':
+                    print("\n\nInvalid input. \nPlease retry again.\n")
+                else:
+                    colour()
+                    print("Which variant do you want?")
+                    qn = input('  a)128GB b)256GB c)512GB : ').upper()
+                    if qn!='128GB' and qn!='256GB' and qn!='512GB':
+                        print("\n\nInvalid input. \nPlease retry again.\n")
+                    else:
+                        model()
+                        iphone()
+                        break
+            else:
+                print('\n\nInvalid input. \nPlease retry again.')
+
+
+    
+
+        elif q2 == b2:   #samsung
+            print(f"\nWhich model do you want in {b2}?")
+            q11 = input('  a)s22 b)s23 c)s24 : ').lower()
+            s1 = 's22'
+            s2 = 's23'
+            s3 = 's24'
+            if q11==s1:
+                print("\nyou have selected",s1,'\n')   #s22
+                print("Which colour do you preffer?")
+                q4 = input('  a)red b)white c)black : ').lower()
+                if q4!='red' and q4!='white' and q4!='black':
+                    print("\n\nInvalid input. \nPlease retry again.\n")
+                else:
+                    colour()
+                    print("Which variant do you want?")
+                    qn = input('  a)128GB b)256GB c)512GB : ').upper()
+                    if qn!='128GB' and qn!='256GB' and qn!='512GB':
+                        print("\n\nInvalid input. \nPlease retry again.\n")
+                    else:
+                        model()
+                        samsung()
+                        break
+            elif q11==s2:
+                print("\nyou have selected",s2,'\n')   #s23
+                print("Which colour do you preffer?")
+                q4 = input('  a)red b)white c)black : ').lower()
+                if q4!='red' and q4!='white' and q4!='black':
+                    print("\n\nInvalid input. \nPlease retry again.\n")
+                else:
+                    colour()
+                    print("Which variant do you want?")
+                    qn = input('  a)128GB b)256GB c)512GB : ').upper()
+                    if qn!='128GB' and qn!='256GB' and qn!='512GB':
+                        print("\n\nInvalid input. \nPlease retry again.\n")
+                    else:
+                        model()
+                        samsung()
+                        break
+            elif q11==s3:
+                print("\nyou have selected",s3,'\n')   #s24
+                print("Which colour do you preffer?")
+                q4 = input('  a)red b)white c)black : ').lower()
+                if q4!='red' and q4!='white' and q4!='black':
+                    print("\n\nInvalid input. \nPlease retry again.\n")
+                else:
+                    colour()
+                    print("Which variant do you want?")
+                    qn = input('  a)128GB b)256GB c)512GB : ').upper()
+                    if qn!='128GB' and qn!='256GB' and qn!='512GB':
+                        print("\n\nInvalid input. \nPlease retry again.\n")
+                    else:
+                        model()
+                        samsung()
+                        break
+            else:
+                print('\n\nInvalid input. \nPlease retry again later.')
+
+
+
+        else:
+            print("\n\nInvalid input. \nPlease retry again.")
+    elif q1==a1[1]:
+        print("\n\nPlease visit back when you want to buy a new phone. \nThanks for visiting...!")
+        break
+    else:
+        print("\n\nInvalid input. \nPlease retry again.\n\n")
